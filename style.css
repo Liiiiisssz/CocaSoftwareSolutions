@@ -1,0 +1,268 @@
+:root{
+    font-size: 16px;
+    --primaryColor: #243D31;
+    --secundaryColor: #31543B;
+    --textDark: #101010;
+    --textMuted: #757B8A;
+    --textMutedLight: #E6E9ED;
+    --textLight: #fff;
+    --highlightedText: #24AA4A;
+    --highlighted: #E7FFD8;
+}
+
+@font-face{
+    font-family: 'DM Sans';
+    src: url(fonts/DM_Sans/DMSans-VariableFont_opsz\,wght.ttf);
+}
+
+@font-face{
+    font-family: 'Inter';
+    src: url(fonts/Inter/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Inter';
+    color: var(--textDark);
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+li{
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+#menuDesktop{
+    display: none;
+}
+
+#login{
+    display: none;
+}
+
+.container{
+    width: 89.33%; /*corrigir*/
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#header{
+    width: 100%;
+    margin-top: calc(1rem - 4px);
+}
+
+.headerInner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo{
+    width: clamp(7.5rem, 4vw, 8.75rem);
+    max-width: 140px;
+}
+
+#menuMobile{
+    width: 24px;
+}
+
+#heroText{
+    text-align: center;
+    margin: 0 auto;
+}
+
+#heroText h1{
+    font-size: 2.25rem;
+    margin-top: 2.464375rem;
+    line-height: 120%;
+    letter-spacing: -1px;
+}
+
+#heroText p{
+    color: var(--textMuted);
+    font-size: 1rem;
+    margin-top: 1.25rem;
+    margin-bottom: 0.875rem;
+    line-height: 160%;
+}
+
+#trial{
+    display: flex;
+    flex-direction: column;
+}
+
+#trial input{
+    max-width: 371px;
+    height: 60px;
+    border-radius: 60px;
+    border: 0;
+    background: #F3F4F8;
+    font-size: 1rem;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+#trial input::placeholder{
+   padding-left: 26px; 
+}
+
+#trial a{
+    max-width: 240px;
+    color: var(--textLight);
+    background: var(--primaryColor);
+    border-radius: 60px;
+    margin: auto;
+    padding: 1.25rem 1.90625rem;
+}
+
+#heroImg{
+    margin: 0 4px;
+    margin-top: 2.5rem;
+    margin-bottom: 3.2325rem;
+    
+}
+
+.highlightedText{
+    color: #24AA4A;
+    background: #E7FFD8;
+    display: inline-block;
+    border-radius: 20px;
+    padding: 0 16px;
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 12px;
+    height: 32px;
+    align-content: center;
+}
+
+#productOverview{
+    background: var(--primaryColor);
+    color: var(--textLight);
+    padding-top: 3.9375rem;
+    padding-bottom: 5.0625rem;
+}
+
+#poText h2{
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 2.5rem;
+    letter-spacing: -3%;
+    margin-top: 1rem;
+    width: 60%;
+}
+
+#poText p{
+    color: var(--textMutedLight);
+    font-size: calc(1rem - 2px);
+    line-height: 150%;
+    margin-top: 1rem;
+}
+
+#poStats{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3.5rem;
+}
+
+#poStats-div{
+    display: flex;
+}
+
+#poStats span{
+    display: none;
+}
+
+#poStats h2{
+    font-family: 'DM Sans';
+    font-weight: 700;
+    letter-spacing: -4%;
+    font-size: 2rem;
+}
+
+#poStats h5{
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: calc(1rem - 2px);
+}
+
+#logosSection{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 19px 24px;
+    margin-inline-start: 5px;
+    margin-inline-end: 5px;
+    margin-top: 3.5rem;
+    margin-bottom: 8.375rem;
+}
+
+.logoOff{
+    display: none;
+}
+
+.logoCard{
+    display: flex;
+    width: 170px;
+    height: 96px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    box-shadow: 0 10.1px 20px rgba(0, 0, 0, 0.06);
+}
+
+#teamImg{
+    margin: 0 4px;
+}
+
+#teamImg-overlay{
+    display: flex;
+    border: 1px solid #000;
+    border-radius: 20px;
+    padding: 17px 20px;
+    gap: 1.5rem;
+}
+
+#teamIcons{
+    display: flex;
+    border: 1px solid #fff;
+    border-radius: 100%;
+}
+
+#teamIcons img{
+    object-fit: cover;
+    margin-left: -23.5px;
+    max-width: 54px;
+}
+
+#teamImg-overlayText h5{
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 150%;
+}
+
+#teamImg-overlayText p{
+    font-family: 'Inter';
+    font-weight: 500;
+    color: var(--textMuted);
+    line-height: 160%;
+}
+
+@media (min-width: 1024px) {
+    
+    #menuMobile{
+        display: none;
+    }
+}
