@@ -153,6 +153,17 @@
                 <div class="analisysCard">
                     <img src="assets/section2-2.png" alt="">
                     <img class="analisysOverlay subir" src="assets/section2-graphic.png" alt="">
+                    <div id="analisysOverlay-inflow">
+                        <img src="assets/arrow-down-green.png" alt="">
+                        <p>Inflow</p>
+                        <div class="price">
+                            <p>$ <b>700</b></p>
+                            <div class="percent">
+                                <img src="assets/arrow-down-red.png" alt="">
+                                <p>10% from previous month</p>
+                            </div>
+                        </div>
+                    </div>
                     <h4>Modern, compliant technology for collections & recovery</h4>
                     <div class="learnMore">
                         <a href="#">Learn more</a>
@@ -172,53 +183,57 @@
                 </div>
                 <div id="graphicsImg">
                     <div id="graphicsImg-outflow">
-                        <img src="assets/section3-graphic.png" alt="">
-                        <div id="graphicsImg-outflow-overlay">
+                        <img id="graphicsGraphic" src="assets/section3-graphic.png" alt="">
+                        <div class="graphicsImg-outflow-overlay">
                             <img src="assets/arrow-up-red.png" alt="">
                             <p>Outflow</p>
-                            <div id="price">
+                            <div class="price">
                                 <p>$ <b>450</b></p>
-                                <div id="percent">
+                                <div class="percent">
                                     <img src="assets/green-statistic.png" alt="">
                                     <p>15% from previous month</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <img src="assets/section3-sales.png" alt="">
+                    <img id="graphicsSales" src="assets/section3-sales.png" alt="">
                     <div id="graphicsImg-overlay">
                         <img src="assets/section3-values.png" alt="">
                     </div>
                 </div>
             </section>
+        </div>
 
             <section id="cocaSoft">
-                <div id="cocaSoftText">
-                    <h3>Read our update about Coca Soft</h3>
-                    <p>Why your company should use a tax software agency for your taxes, not just an accountant</p>
-                </div>
-                <div id="cocaSoftImg">
-                    <div class="cocaSoftCards">
-                        <img src="assets/section4-1.png" alt="">
-                        <div class="cocaSoftCards-overlay">
-                           <p><b>Are Coworking Spaces Right for You?</b></p> 
-                        </div>
+                <div class="container">
+                    <div id="cocaSoftText">
+                        <h3>Read our update about Coca Soft</h3>
+                        <p>Why your company should use a tax software agency for your taxes, not just an accountant</p>
                     </div>
-                    <div class="cocaSoftCards">
-                        <img src="assets/section4-2.png" alt="">
-                        <div class="cocaSoftCards-overlay">
-                            <p><b>The Benefits of Coworking Spaces for Small Businesses</b></p> 
+                    <div id="cocaSoftImg">
+                        <div class="cocaSoftCards">
+                            <img src="assets/section4-1.png" alt="">
+                            <div class="cocaSoftCards-overlay">
+                            <p>Are Coworking Spaces Right for You?</p> 
+                            </div>
                         </div>
-                    </div>
-                    <div class="cocaSoftCards">
-                        <img src="assets/section4-3.png" alt="">
-                        <div class="cocaSoftCards-overlay">
-                            <p><b>How to Find the Best Coworking Spaces for You</b></p> 
+                        <div class="cocaSoftCards">
+                            <img src="assets/section4-2.png" alt="">
+                            <div class="cocaSoftCards-overlay">
+                                <p>The Benefits of Coworking Spaces for Small Businesses</p> 
+                            </div>
+                        </div>
+                        <div class="cocaSoftCards">
+                            <img src="assets/section4-3.png" alt="">
+                            <div class="cocaSoftCards-overlay">
+                                <p>How to Find the Best Coworking Spaces for You</p> 
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
 
+        <div class="container">
             <section id="reviews">
                 <div id="reviewsHeader">
                     <h3>Our happy clients says about us</h3>
@@ -235,7 +250,7 @@
                             “They are able to help a startup like mine scale and are very responsive to all our 
                             unique needs”
                         </h4>
-                        <p><b>— Yacob Sudarmaji</b></p>
+                        <h4>— Yacob Sudarmaji</h4>
                         <p>Product Manager, Qnet</p>
                         <img src="assets/Slidebar.png" alt="">
                     </div>
@@ -251,6 +266,7 @@
                             <img src="assets/Star.png" alt="">
                             <p>Alexis Rank</p>
                         </div>
+                        <hr>
                         <div class="starsCard">
                             <h3>5,0</h3>
                             <img src="assets/Star.png" alt="">
@@ -272,11 +288,11 @@
                 </div>
             </div>
             <div id="footerMenu">
-                <div id="newsletters">
+                <div id="newsletter">
                     <h6>Subscribe to our newsletter</h6>
-                    <div id="newslettersInput">
+                    <div id="newsletterInput">
                         <input type="text" placeholder="Email address">
-                        <p>></p>
+                        <a href="#">></a>
                     </div>
                 </div>
                 <div id="footerMenuLinks">

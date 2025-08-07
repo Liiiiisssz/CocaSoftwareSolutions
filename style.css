@@ -20,6 +20,11 @@
     src: url(fonts/Inter/Inter-VariableFont_opsz\,wght.ttf);
 }
 
+@font-face{
+    font-family: 'Plus Jakarta Sans';
+    src: url(fonts/Plus_Jakarta_Sans/PlusJakartaSans-VariableFont_wght.ttf);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -334,8 +339,33 @@ img{
     transform: translateX(-50%);
 }
 
-.analisysOverlay-subir{
-    bottom: 225px
+.subir{
+    bottom: 227px
+}
+
+#analisysOverlay-inflow{
+    position: absolute;
+    top: 35%;
+    left: -5%;
+
+    background: #fff;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 8px;
+    padding: 5px 5px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+#analisysOverlay-inflow img{
+    width: 17px;
+}
+
+#analisysOverlay-inflow p{
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 7px;
+    margin-left: 5px;
+    margin-right: 10px;
 }
 
 .analisysCard h4{
@@ -393,55 +423,366 @@ img{
     margin-top: 1.5rem;
 }
 
-#graphicsImg-outflow-overlay{
+#graphicsImg{
+    position: relative;
+    margin-top: 3.125rem;
+}
+
+#graphicsImg-outflow{
+    position: relative;
+}
+
+#graphicsGraphic{
+    width: 90%;
+}
+
+#graphicsSales{
+    width: 35%;
+    position: absolute;
+    right: -3.5%;
+    bottom: 0;
+    z-index: 1;
+}
+
+#graphicsImg-overlay{
+    width: 55%;
+    position: absolute;
+    bottom: 2.5%;
+    left: 38%;
+    z-index: 2;
+}
+
+.graphicsImg-outflow-overlay{
+    position: absolute;
+    top: 35%;
+    left: -5%;
+
+    background: #fff;
     display: inline-flex;
     align-items: center;
-    border: 1px solid #101010; /*tirar*/
     border-radius: 8px;
-    padding: 12px 12px;
+    padding: 5px 5px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
 }
 
-#graphicsImg-outflow-overlay img{
-    width: 33px;
+.graphicsImg-outflow-overlay img{
+    width: 17px;
 }
 
-#graphicsImg-outflow-overlay p{
+.graphicsImg-outflow-overlay p{
     font-family: 'Inter';
     font-weight: 700;
-    font-size: 14px;
-    margin-left: 12px;
-    margin-right: 25px;
+    font-size: 7px;
+    margin-left: 5px;
+    margin-right: 10px;
 }
 
-#price p{
+.price p{
     color: var(--textMuted);
-    font-size: 10px;
+    font-size: 8px;
     font-weight: 400;
     text-align: end;
     margin: 0;
 }
 
-#price b{
+.price b{
     color: #101010;
-    font-size: 1rem;
+    font-size: 10px;
 }
 
-#percent{
+.percent{
     display: flex;
 }
 
-#percent img{
-    width: 11px;
-    height: 11px;
-    margin-right: 4px;
+.percent img{
+    width: 6px !important;
+    height: 6px !important;
+    margin-right: 3px;
 }
 
-#percent p{
+.percent p{
     font-family: 'Inter';
     font-weight: 400;
-    font-size: 10px;
+    font-size: 6px;
+    letter-spacing: -0.5px;
     margin: 0;
     color: var(--textMuted);
+}
+
+#cocaSoft{
+    background: var(--primaryColor);
+    color: #fff;
+    padding-bottom: 4.5rem;
+}
+
+#cocaSoftText{
+    margin: 0 8px;
+}
+
+#cocaSoftText h3{
+    font-family: 'Plus Jakarta Sans';
+    font-weight: 700;
+    font-size: 2.5rem;
+    padding-top: 5.25rem;
+    line-height: 120%;
+}
+
+#cocaSoftText p{
+    color: #D6D6D6;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2.25rem;
+}
+
+.cocaSoftCards{
+    position: relative;
+    width: 327px;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+}
+
+.cocaSoftCards img{
+    display: block;
+}
+
+.cocaSoftCards-overlay{
+    display: flex;
+    background: #fff;
+    color: var(--textDark);
+    border-radius: 12px;
+    height: 92px;
+    width: 297px;
+    align-items: center;  
+
+    position: absolute;
+    bottom: 14px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.cocaSoftCards-overlay p{
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 140%;
+    
+    padding-inline-start: 1.5625rem;
+    padding-inline-end: 0.5; 
+}
+
+#reviewsFooter{
+    margin: 0 4px;
+}
+
+#reviewsHeader{
+    margin: 0 10px;
+}
+
+#reviewsHeader h3{
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-top: 3.9375rem;
+}
+
+#reviewsHeader p{
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--textMuted);
+    margin-top: 1.5rem;
+}
+
+#reviewsReport{
+    margin: 0 4px;
+}
+
+#reviewsReport img{
+    width: 327px;
+    margin-top: 2.5rem;
+}
+
+#reviewsReportText img{
+    width: 39px;
+    margin-top: 1.5rem;
+}
+
+#reviewsReportText h4{
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 120%;
+    margin-top: 0.9375rem;
+    width: 95%;
+}
+
+#reviewsReportText h4:nth-child(3){
+    margin-top: 2rem;
+}
+
+#reviewsReportText p{
+    color: var(--textMuted);
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 24px;
+    margin-top: 7px;
+}
+
+#reviewsReport img{
+    margin-top: 2.875rem;
+    width: 84px;
+}
+
+#reviewsFooterText h3{
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 2.25rem;
+    letter-spacing: -1px;
+    line-height: 120%;
+    width: 95%;
+    margin-top: 6.5rem;
+}
+
+#reviewsFooterText p{
+    color: var(--textMuted);
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 160%;
+    margin-top: 1.5rem;
+}
+
+#reviewsFooterStars{
+    display: flex;
+    gap: 2.5rem;
+    margin-top: 1.625rem;
+}
+
+#reviewsFooterStars hr{
+    border: 1px solid #ededed;
+}
+
+.starsCard h3{
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.starsCard img{
+    width: 116px;
+    margin: 0.4375rem 0;
+}
+
+.starsCard p{
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 150%;
+    color: var(--textMuted);
+}
+
+#footerLogo{
+    display: flex;
+    flex-direction: column;
+    margin-top: 7.875rem;
+    align-items: center;
+}
+
+#footerLogo img{
+    width: 60px;
+    height: 60px;
+}
+
+#getStarted p{
+    margin-top: 1.5rem;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 160%;
+}
+
+#getStarted a{
+    background: var(--secundaryColor);
+    color: #fff;
+    display: block;
+    border-radius: 8px;
+    padding: 12px 42px;
+    margin-top: 0.75rem;
+
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 150%;
+}
+
+#newsletter{
+    margin: 0 4px;
+    width: 100%;
+}
+
+#newsletter h6{
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 120%;
+    margin-top: 5.1875rem;
+    width: 60%;
+}
+
+#newsletterInput{
+    display: flex;
+    margin-top: 1.875rem;
+}
+
+#newsletterInput input{
+    border: 0;
+    border-bottom: 1px solid var(--textMutedLight);
+    width: 100%;
+}
+
+#newsletterInput input::placeholder{
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--textMuted);
+}
+
+#newsletterInput a{
+    font-family: 'DM Sans';
+    font-weight: 600;
+    color: #fff;
+    background: var(--secundaryColor);
+    padding: 15px 22px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+#footerMenuLinks{
+    display: none;
+}
+
+#termsText{
+    display: flex;
+    margin-top: 4.0625rem;
+    gap: 3.4375rem;
+}
+
+#termsText p{
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 1rem;
+    color: #33353E;
+}
+
+#termsSocial{
+    display: flex;
+    gap: 2.5rem;
+    justify-content: center;
+    margin-top: 2.5rem;
+    margin-bottom: 2.6875rem;
 }
 
 @media (min-width: 1024px) {
