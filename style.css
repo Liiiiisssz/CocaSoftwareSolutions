@@ -89,6 +89,8 @@ img{
 }
 
 #heroText h1{
+    font-family: 'DM Sans';
+    font-weight: 700;
     font-size: 2.25rem;
     margin-top: 2.464375rem;
     line-height: 120%;
@@ -98,6 +100,7 @@ img{
 #heroText p{
     color: var(--textMuted);
     font-size: 1rem;
+    font-weight: 500;
     margin-top: 1.25rem;
     margin-bottom: 0.875rem;
     line-height: 160%;
@@ -121,6 +124,9 @@ img{
 
 #trial input::placeholder{
    padding-left: 26px; 
+   font-family: 'Inter';
+   font-weight: 400;
+   font-size: 1rem;
 }
 
 #trial a{
@@ -130,6 +136,7 @@ img{
     border-radius: 60px;
     margin: auto;
     padding: 1.25rem 1.90625rem;
+    font-weight: 700;
 }
 
 #heroImg{
@@ -293,6 +300,7 @@ img{
     font-family: 'Inter';
     font-weight: 500;
     font-size: 1.125rem;
+    line-height: 140%;
 
     margin-top: 1.5rem;
 }
@@ -300,6 +308,9 @@ img{
 #teamText p:last-child{
     color: var(--textMuted);
     margin-bottom: 7.1875rem;
+    font-size: 1rem;
+    line-height: 160%;
+    width: 95%;
 }
 
 #analisysText h3{
@@ -345,15 +356,19 @@ img{
 
 #analisysOverlay-inflow{
     position: absolute;
-    top: 35%;
-    left: -5%;
-
+    top: 41.6%;
+    left: 39%;
+    width: 184.5px;
+    
     background: #fff;
     display: inline-flex;
     align-items: center;
     border-radius: 8px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
     padding: 5px 5px;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+    justify-content: space-between;
 }
 
 #analisysOverlay-inflow img{
@@ -534,6 +549,7 @@ img{
     font-size: 1rem;
     margin-top: 1.5rem;
     margin-bottom: 2.25rem;
+    line-height: 160%;
 }
 
 .cocaSoftCards{
@@ -593,6 +609,7 @@ img{
     font-size: 1rem;
     color: var(--textMuted);
     margin-top: 1.5rem;
+    line-height: 160%;
 }
 
 #reviewsReport{
@@ -631,7 +648,7 @@ img{
     margin-top: 7px;
 }
 
-#reviewsReport img{
+#reviewsReportText img:last-child{
     margin-top: 2.875rem;
     width: 84px;
 }
@@ -783,6 +800,19 @@ img{
     justify-content: center;
     margin-top: 2.5rem;
     margin-bottom: 2.6875rem;
+}
+
+@media (max-width: 1023px){
+
+    #logosSection .logoCard:nth-child(1),
+    #logosSection .logoCard:nth-child(2){
+    order: 2;
+    }
+
+    #logosSection .logoCard:nth-child(4),
+    #logosSection .logoCard:nth-child(5){
+        order: 1;
+    }
 }
 
 @media (min-width: 1024px) {
