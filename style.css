@@ -40,6 +40,27 @@ a{
     color: inherit;
 }
 
+h2{
+    font-family: 'DM Sans';
+    font-weight: 700;
+}
+
+h3{
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 120%;
+}
+
+h4{
+    font-weight: 700;
+    line-height: 120%;
+}
+
+p{
+    font-weight: 500;
+}
+
 li{
     list-style: none;
 }
@@ -65,7 +86,7 @@ img{
 
 #header{
     width: 100%;
-    margin-top: calc(1rem - 4px);
+    margin-top: 0.75rem;
 }
 
 .headerInner{
@@ -75,7 +96,7 @@ img{
 }
 
 #logo{
-    width: clamp(7.5rem, 4vw, 8.75rem);
+    width: clamp(7.5rem, 10vw, 8.75rem);
     max-width: 140px;
 }
 
@@ -91,7 +112,7 @@ img{
 #heroText h1{
     font-family: 'DM Sans';
     font-weight: 700;
-    font-size: 2.25rem;
+    font-size: clamp(2.25rem, 5vw, 4rem);
     margin-top: 2.464375rem;
     line-height: 120%;
     letter-spacing: -1px;
@@ -99,8 +120,6 @@ img{
 
 #heroText p{
     color: var(--textMuted);
-    font-size: 1rem;
-    font-weight: 500;
     margin-top: 1.25rem;
     margin-bottom: 0.875rem;
     line-height: 160%;
@@ -117,7 +136,6 @@ img{
     border-radius: 60px;
     border: 0;
     background: #F3F4F8;
-    font-size: 1rem;
     width: 100%;
     margin-bottom: 1rem;
 }
@@ -143,7 +161,7 @@ img{
     margin: 0 4px;
     margin-top: 2.5rem;
     margin-bottom: 3.2325rem;
-    
+    max-width: 1020px;
 }
 
 .highlightedText{
@@ -167,9 +185,7 @@ img{
 }
 
 #poText h2{
-    font-family: 'DM Sans';
-    font-weight: 700;
-    font-size: 2.5rem;
+    font-size: clamp(2.5rem, 4.5vw, 3.75rem);
     letter-spacing: -3%;
     margin-top: 1rem;
     width: 60%;
@@ -177,7 +193,7 @@ img{
 
 #poText p{
     color: var(--textMutedLight);
-    font-size: calc(1rem - 2px);
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
     line-height: 150%;
     margin-top: 1rem;
 }
@@ -197,16 +213,14 @@ img{
 }
 
 #poStats h2{
-    font-family: 'DM Sans';
-    font-weight: 700;
     letter-spacing: -4%;
-    font-size: 2rem;
+    font-size: clamp(2rem, 5.6vw, 5rem);
 }
 
 #poStats h5{
     font-family: 'DM Sans';
     font-weight: 500;
-    font-size: calc(1rem - 2px);
+    font-size: clamp(0.875rem, 1.5vw, 1.125rem);
 }
 
 #logosSection{
@@ -238,6 +252,7 @@ img{
     margin: 0 4px;
     position: relative;
     margin-bottom: 4.125rem;
+    max-width: 584px;
 }
 
 #teamImg-overlay{
@@ -265,43 +280,31 @@ img{
 #teamIcons img{
     object-fit: cover;
     margin-left: -23.5px;
-    width: 50px;
-    max-width: 54px;
-    max-height: 54px;
+    width: clamp(50px, 5vw, 54px);
     border-radius: 100%;
 }
 
 #teamImg-overlayText h5{
     font-family: 'DM Sans';
     font-weight: 700;
-    font-size: 1rem;
+    font-size: clamp(1rem, 2vw, 1.5rem);
     line-height: 150%;
 }
 
 #teamImg-overlayText p{
-    font-family: 'Inter';
-    font-weight: 500;
-    font-size: 0.75rem;
+    font-size: clamp(0.75rem, 1.5vw, 1rem);
     color: var(--textMuted);
     line-height: 160%;
     white-space: nowrap;
 }
 
 #teamText h3{
-    font-family: 'DM Sans';
-    font-weight: 700;
-    font-size: 2.5rem;
-    line-height: 120%;
-    
     margin-top: 1.5rem;
 }
 
 #teamText p{
-    font-family: 'Inter';
-    font-weight: 500;
     font-size: 1.125rem;
     line-height: 140%;
-
     margin-top: 1.5rem;
 }
 
@@ -314,21 +317,12 @@ img{
 }
 
 #analisysText h3{
-    font-family: 'DM Sans';
-    font-weight: 700;
-    font-size: 2.5rem;
-    line-height: 120%;
-
     margin-top: 1rem;
 }
 
 #analisysText p{
-    font-family: 'Inter';
-    font-weight: 500;
-    font-size: 1rem;
     line-height: 160%;
     color: var(--textMuted);
-
     margin-top: 1rem;
     margin-bottom: 2.125rem;
 }
@@ -376,7 +370,6 @@ img{
 }
 
 #analisysOverlay-inflow p{
-    font-family: 'Inter';
     font-weight: 700;
     font-size: 7px;
     margin-left: 5px;
@@ -385,9 +378,7 @@ img{
 
 .analisysCard h4{
     font-family: 'DM Sans';
-    font-weight: 700;
-    font-size: 1.5rem;
-    line-height: 120%;
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
     margin-top: 1rem;
 }
 
@@ -419,22 +410,14 @@ img{
 }
 
 #graphicsText h3{
-    font-family: 'DM Sans';
-    font-weight: 700;
-    font-size: 2.5rem;
-    line-height: 120%;
     letter-spacing: -1px;
     width: 93.3%;
     margin-top: 6.625rem;
 }
 
 #graphicsText p{
-    font-family: 'Inter';
-    font-weight: 500;
-    font-size: 1rem;
     line-height: 160%;
     color: var(--textMuted);
-
     margin-top: 1.5rem;
 }
 
@@ -485,7 +468,6 @@ img{
 }
 
 .graphicsImg-outflow-overlay p{
-    font-family: 'Inter';
     font-weight: 700;
     font-size: 7px;
     margin-left: 5px;
@@ -516,7 +498,6 @@ img{
 }
 
 .percent p{
-    font-family: 'Inter';
     font-weight: 400;
     font-size: 6px;
     letter-spacing: -0.5px;
@@ -536,17 +517,11 @@ img{
 
 #cocaSoftText h3{
     font-family: 'Plus Jakarta Sans';
-    font-weight: 700;
-    font-size: 2.5rem;
     padding-top: 5.25rem;
-    line-height: 120%;
 }
 
 #cocaSoftText p{
     color: #D6D6D6;
-    font-family: 'Inter';
-    font-weight: 500;
-    font-size: 1rem;
     margin-top: 1.5rem;
     margin-bottom: 2.25rem;
     line-height: 160%;
@@ -579,11 +554,9 @@ img{
 }
 
 .cocaSoftCards-overlay p{
-    font-family: 'Inter';
     font-weight: 600;
     font-size: 1.125rem;
     line-height: 140%;
-    
     padding-inline-start: 1.5625rem;
     padding-inline-end: 0.5; 
 }
@@ -597,16 +570,10 @@ img{
 }
 
 #reviewsHeader h3{
-    font-family: 'DM Sans';
-    font-weight: 700;
-    font-size: 2.5rem;
     margin-top: 3.9375rem;
 }
 
 #reviewsHeader p{
-    font-family: 'Inter';
-    font-weight: 500;
-    font-size: 1rem;
     color: var(--textMuted);
     margin-top: 1.5rem;
     line-height: 160%;
@@ -628,9 +595,7 @@ img{
 
 #reviewsReportText h4{
     font-family: 'Inter';
-    font-weight: 700;
-    font-size: 1.125rem;
-    line-height: 120%;
+    font-size: clamp(1.125rem, 1.8vw, 1.5rem);
     margin-top: 0.9375rem;
     width: 95%;
 }
@@ -639,11 +604,13 @@ img{
     margin-top: 2rem;
 }
 
+#reviewsReportText h4:last-of-type{
+    font-size: 1.125rem;
+}
+
 #reviewsReportText p{
     color: var(--textMuted);
-    font-family: 'Inter';
     font-weight: 400;
-    font-size: 1rem;
     line-height: 24px;
     margin-top: 7px;
 }
@@ -654,20 +621,14 @@ img{
 }
 
 #reviewsFooterText h3{
-    font-family: 'DM Sans';
-    font-weight: 700;
-    font-size: 2.25rem;
+    font-size: clamp(2.25rem 1vw, 2.5rem);
     letter-spacing: -1px;
-    line-height: 120%;
     width: 95%;
     margin-top: 6.5rem;
 }
 
 #reviewsFooterText p{
     color: var(--textMuted);
-    font-family: 'Inter';
-    font-weight: 500;
-    font-size: 1rem;
     line-height: 160%;
     margin-top: 1.5rem;
 }
@@ -682,20 +643,12 @@ img{
     border: 1px solid #ededed;
 }
 
-.starsCard h3{
-    font-family: 'DM Sans';
-    font-weight: 700;
-    font-size: 2.5rem;
-}
-
 .starsCard img{
     width: 116px;
     margin: 0.4375rem 0;
 }
 
 .starsCard p{
-    font-family: 'Inter';
-    font-weight: 500;
     font-size: 0.875rem;
     line-height: 150%;
     color: var(--textMuted);
@@ -715,9 +668,6 @@ img{
 
 #getStarted p{
     margin-top: 1.5rem;
-    font-family: 'Inter';
-    font-weight: 500;
-    font-size: 1rem;
     line-height: 160%;
 }
 
@@ -731,7 +681,6 @@ img{
 
     font-family: 'Inter';
     font-weight: 700;
-    font-size: 1rem;
     line-height: 150%;
 }
 
@@ -788,10 +737,8 @@ img{
 }
 
 #termsText p{
-    font-family: 'Inter';
-    font-weight: 500;
-    font-size: 1rem;
     color: #33353E;
+    line-height: 160%;
 }
 
 #termsSocial{
@@ -819,5 +766,170 @@ img{
     
     #menuMobile{
         display: none;
+    }
+
+    #menuDesktop, #menuDesktop ul{
+        display: flex;
+        gap: 32px;
+        color: var(--textMuted);
+    }
+
+    #menuDesktop ul li:first-child{
+        color: var(--secundaryColor);
+        font-weight: 700;
+    }
+
+    #login{
+        display: block;
+        padding: 16px 36px;
+        background: var(--secundaryColor);
+        color: #fff;
+        border-radius: 60px;
+        font-weight: 700;
+        line-height: 150%;
+    }
+
+    #header{
+        margin-top: 1.5rem;
+    }
+
+    #headerDesktop{
+        display: flex;
+        align-items: center;
+        gap: 65px;
+    }
+
+    #heroText h1{
+        width: 60%;
+        margin: 0 auto;
+        margin-top: 5.75rem;
+        letter-spacing: -3px;
+    }
+
+    #heroText p{
+        width: 35%;
+        margin: 0 auto;
+        margin-top: 1rem;
+    }
+
+    #trial{
+        flex-direction: row;
+        margin: 0 auto;
+        margin-top: 3rem;
+        width: 630px;
+        gap: 19px;
+    }
+
+    #trial input{
+        margin: 0;
+    }
+    
+    #hero{
+        position: relative;
+    }
+
+    #heroImg{
+        margin: 0 auto;
+        position: relative;
+        z-index: 2;
+        margin-top: 63px;
+        margin-bottom: -121px;
+    }
+
+    #productOverview{
+        position: relative;
+        z-index: 1;
+        padding: 0 180px;
+        padding-top: 237px;
+        padding-bottom: 126px; 
+    }
+
+    #poText{
+        display: flex;
+        gap: 89px;
+    }
+
+    #poText h2{
+        width: 336px;
+    }
+
+    #poText p{
+        width: 566px;
+        align-self: flex-end;
+        margin-bottom: 5px;
+    }
+
+    #poStats{
+        margin-top: 108px;
+    }
+
+    #poStats span{
+        display: inline;
+    }
+
+    #logosSection{
+        display: flex;
+        grid-template-rows: 1fr;
+        margin-top: 75px;
+        margin-bottom: 132px;
+        gap: 48px;
+        justify-content: center;
+    }
+    .logoOff{
+        display: inline;
+        width: 170px;
+    }
+
+    #teamContent{
+        display: flex;
+        gap: 125px;
+        max-height: 453px;
+    }
+
+    #teamImg > img{
+        height: 453px;
+    }
+
+    #teamImg-overlay{
+        width: 280px;
+        gap: 24px;
+        bottom: -28px;
+        left: 85%;
+        transform: translateX(-50%);
+        box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    #div-teamText{
+        width: 500px;
+        align-self: center;
+    }
+
+    #teamText p:last-child{
+        margin-bottom: 0;
+    }
+
+    #analisys{
+        margin-top: 15.125rem;
+    }
+
+    #analisysSection{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 79px;
+        align-items: end;
+    }
+
+    #analisysText p{
+        margin-bottom: 3.75rem;
+    }
+
+    .analisysCard h4{
+        margin-top: 38px;
+        width: 90%;
+    }
+
+    .learnMore{
+        margin: 0;
+        margin-top: 32px;
     }
 }
