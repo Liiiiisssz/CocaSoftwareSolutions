@@ -57,7 +57,7 @@ COCASOFTWARESOLUTIONS
 
 1. Clone o repositório:
 ```
-   git clone https://github.com/Liiiiisssz/BusinessSite-Front.git
+   git clone https://github.com/Liiiiisssz/CocaSoftwareSolutions.git
 ```
 2. Entre na pasta:
 ```
