@@ -39,7 +39,7 @@ Este projeto consiste no desenvolvimento de uma página web **totalmente respons
 
 ## 📂 Estrutura do Projeto
 ```
-BusinessSoftware
+COCASOFTWARESOLUTIONS
 └── assets
     └── logos
 └── fonts
@@ -47,7 +47,8 @@ BusinessSoftware
     ├── Inter
     └── Plus_Jakarta_Sans
 ├── index.html
-├── style.css
+├── README.md
+└── style.css
 ```
 
 ---
@@ -56,7 +57,7 @@ BusinessSoftware
 
 1. Clone o repositório:
 ```
-   git clone https://github.com/Liiiiisssz/BusinessSite-Front.git
+   git clone https://github.com/Liiiiisssz/CocaSoftwareSolutions.git
 ```
 2. Entre na pasta:
 ```
