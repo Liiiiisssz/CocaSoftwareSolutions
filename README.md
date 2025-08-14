@@ -5,11 +5,7 @@
 
 ## 🖼️ Prévia do Projeto
 <p align="center">
-  <img src="assets/preview-desktop.gif" alt="Prévia do site no desktop" width="80%">
-</p>
-
-<p align="center">
-  <img src="assets/preview-mobile.gif" alt="Prévia do site no mobile" width="35%">
+  <img src="assets/readme/gifpreview.gif" alt="Prévia do site" width="80%">
 </p>
 
 ---
