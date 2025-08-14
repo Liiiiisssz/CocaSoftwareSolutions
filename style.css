@@ -136,7 +136,8 @@ img{
     border-radius: 60px;
     border: 0;
     background: #F3F4F8;
-    width: 100%;
+    width: clamp(330px, 55vw, 371px);
+    margin: 0 auto;
     margin-bottom: 1rem;
 }
 
@@ -239,6 +240,7 @@ img{
 }
 
 .logoCard{
+    margin: 0 auto;
     display: flex;
     width: 170px;
     height: 96px;
@@ -249,7 +251,8 @@ img{
 }
 
 #teamImg{
-    margin: 0 4px;
+    display: flex;
+    margin: 0 auto;
     position: relative;
     margin-bottom: 4.125rem;
     max-width: 584px;
@@ -281,6 +284,7 @@ img{
     object-fit: cover;
     margin-left: -23.5px;
     width: clamp(50px, 5vw, 54px);
+    min-width: 50px;
     border-radius: 100%;
 }
 
@@ -338,7 +342,7 @@ img{
 
 .analisysOverlay{
     position: absolute;
-    width: 195px;
+    width: clamp(195px,  25vw, 322px);
     bottom: 200px;
     left: 68%;
     transform: translateX(-50%);
@@ -352,7 +356,7 @@ img{
     position: absolute;
     top: 41.6%;
     left: 39%;
-    width: 184.5px;
+    width: clamp(184.5px 25vw, 319px);
     
     background: #fff;
     display: inline-flex;
@@ -366,12 +370,13 @@ img{
 }
 
 #analisysOverlay-inflow img{
-    width: 17px;
+    width: clamp(17px, 5vw, 42px);
+    margin: 0;
 }
 
 #analisysOverlay-inflow p{
     font-weight: 700;
-    font-size: 7px;
+    font-size: clamp(7px, 1vw, 10px);
     margin-left: 5px;
     margin-right: 10px;
 }
@@ -478,7 +483,7 @@ img{
 
 .graphicsImg-outflow-overlay p{
     font-weight: 700;
-    font-size: 7px;
+    font-size: clamp(7px, 1vw, 16px);
     margin-left: 5px;
     margin-right: 10px;
 }
@@ -493,7 +498,7 @@ img{
 
 .price b{
     color: #101010;
-    font-size: 10px;
+    font-size: clamp(10px, 2vw, 24px);
 }
 
 .percent{
@@ -762,6 +767,66 @@ img{
     margin-bottom: 2.6875rem;
 }
 
+@media(min-width: 768px){
+
+    .logoOff{
+        display: inline;
+        width: 170px;
+        margin: 0 auto;
+    }
+
+    #logosSection{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #reviewsHeader{
+        display: flex;
+        margin: 0;
+        margin-top: 6.75rem;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #reviewsHeader h3{
+        margin: 0;
+        width: 32%;
+    }
+
+    #reviewsHeader p{
+        margin: 0;
+        width: 37%;
+    }
+
+    #reviewsReport, #reviewsFooter{
+        margin: 0 56px;
+    }
+
+    #reviewsReport{
+        margin-top: 7rem;
+        display: flex;
+        gap: 6.3125rem;
+        align-items: center;
+    }
+
+    #reviewsReport img{
+        margin: 0;
+    }
+
+    #reviewsFooter{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5.75rem;
+    }
+
+    #reviewsFooter h3, #reviewsFooterStars{
+        margin: 0;
+    }
+
+    #reviewsFooterText{
+        width: 50%;
+    }
+}
+
 @media (max-width: 1023px){
 
     #logosSection .logoCard:nth-child(1),
@@ -852,7 +917,7 @@ img{
     #productOverview{
         position: relative;
         z-index: 1;
-        padding: 0 180px;
+        padding: 0 clamp( 100px, 12.5vw, 180px);
         padding-top: 237px;
         padding-bottom: 126px; 
     }
@@ -887,10 +952,6 @@ img{
         margin-bottom: 132px;
         gap: 48px;
         justify-content: center;
-    }
-    .logoOff{
-        display: inline;
-        width: 170px;
     }
 
     #teamContent{
@@ -994,18 +1055,17 @@ img{
     }
 
     .graphicsImg-outflow-overlay p{
-        font-size: 1rem;
         margin-left: 1.1875rem;
         margin-right: 2.8125rem;
     }
 
     .price p{
         font-size: 10px;
-        margin: 0;
+        margin: 0 !important;
     }
 
     .price b{
-        font-size: 1.5rem;
+        margin: 0 !important;
     }
 
     .percent{
@@ -1015,14 +1075,13 @@ img{
     .percent img{
         width: 12px !important;
         height: 8px !important;
-        margin-right: 4px;
     }
 
     .percent p{
         font-weight: 400;
-        font-size: 10px;
         letter-spacing: 0;
-        margin: 0;
+        margin: 0 !important;
+        margin-left: 5px !important;
         color: var(--textMuted);
     }
 
@@ -1051,53 +1110,6 @@ img{
 
     .cocaSoftCards-overlay p{
         width: 80%;
-    }
-
-    #reviewsHeader{
-        display: flex;
-        margin: 0;
-        margin-top: 6.75rem;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    #reviewsHeader h3{
-        margin: 0;
-        width: 32%;
-    }
-
-    #reviewsHeader p{
-        margin: 0;
-        width: 37%;
-    }
-
-    #reviewsReport, #reviewsFooter{
-        margin: 0 56px;
-    }
-
-    #reviewsReport{
-        margin-top: 7rem;
-        display: flex;
-        gap: 6.3125rem;
-        align-items: center;
-    }
-
-    #reviewsReport img{
-        margin: 0;
-    }
-
-    #reviewsFooter{
-        display: flex;
-        justify-content: space-between;
-        margin-top: 5.75rem;
-    }
-
-    #reviewsFooter h3, #reviewsFooterStars{
-        margin: 0;
-    }
-
-    #reviewsFooterText{
-        width: 50%;
     }
 
     #footerLogo{
@@ -1159,5 +1171,26 @@ img{
         margin: 0;
         margin-top: 4.375rem;
         margin-bottom: 6.25rem;
+    }
+
+    .analisysOverlay{
+        bottom: 220px;
+        left: 69%;
+    }
+
+    #analisysOverlay-inflow{
+        top: 48%;
+        left: 40.5%;
+        
+        border-radius: 16px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        padding: 16px 18px;
+    }
+
+    #inflow { 
+        font-size: 1rem !important;
+        margin-left: 20px !important;
+        margin-right: 30px !important;
     }
 }
