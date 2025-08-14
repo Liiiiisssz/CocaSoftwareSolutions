@@ -335,28 +335,32 @@ img{
     position: relative;
 }
 
-.analisysCard img:first-child{
-    display: block;
-    margin: 0 4px;
+.imageWrapper{
+    position: relative;
+    width: clamp(327px,40vw, 560px);
+    max-width: 560px;
+    margin: 0 auto;
 }
 
 .analisysOverlay{
     position: absolute;
-    width: clamp(195px,  25vw, 322px);
-    bottom: 200px;
-    left: 68%;
+    width: clamp(180px,  25vw, 322px);
+    bottom: 4%;
+    left: 68.5%;
     transform: translateX(-50%);
+    max-width: 95%;
 }
 
 .subir{
-    bottom: 227px
+    bottom: 2.5%;
 }
 
 #analisysOverlay-inflow{
     position: absolute;
-    top: 41.6%;
-    left: 39%;
-    width: clamp(184.5px 25vw, 319px);
+    top: 0%;
+    left: 0%;
+    width: clamp(170px, 10vw, 319px);
+    justify-content: space-between;
     
     background: #fff;
     display: inline-flex;
@@ -366,11 +370,11 @@ img{
     border-bottom-right-radius: 0;
     padding: 5px 5px;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
-    justify-content: space-between;
 }
 
 #analisysOverlay-inflow img{
-    width: clamp(17px, 5vw, 42px);
+    width: clamp(17px, 4vw, 42px) !important;
+    min-width: 17px;
     margin: 0;
 }
 
@@ -379,6 +383,11 @@ img{
     font-size: clamp(7px, 1vw, 10px);
     margin-left: 5px;
     margin-right: 10px;
+    white-space: nowrap;
+}
+
+#inflow {
+    font-size: clamp(7px, 1.5vw, 1rem) !important;
 }
 
 .analisysCard h4{
@@ -498,7 +507,7 @@ img{
 
 .price b{
     color: #101010;
-    font-size: clamp(10px, 2vw, 24px);
+    font-size: clamp(10px, 1.7vw, 24px);
 }
 
 .percent{
@@ -599,11 +608,14 @@ img{
 
 #reviewsReport img{
     width: clamp(327px, 35vw, 453px);
+    
+    margin: 0 auto;
     margin-top: 2.5rem;
 }
 
 #reviewsReportText img{
     width: clamp(39px, 5vw, 51px);
+    margin: 0;
     margin-top: 1.5rem;
 }
 
@@ -787,6 +799,15 @@ img{
         justify-content: space-between;
     }
 
+    .analisysOverlay{
+        bottom: 3.5%;
+        left: 65%;
+    }
+
+    .subir{
+        bottom: 2.5%;
+    }
+
     #reviewsHeader h3{
         margin: 0;
         width: 32%;
@@ -837,6 +858,19 @@ img{
     #logosSection .logoCard:nth-child(4),
     #logosSection .logoCard:nth-child(5){
         order: 1;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1063px){
+
+    #analisysOverlay-inflow{
+        width: 60%;
+        min-width: 230px;
+        
+        border-radius: 16px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        padding: 16px 18px;
     }
 }
 
@@ -1074,6 +1108,7 @@ img{
 
     .percent img{
         width: 12px !important;
+        max-width: 12px;;
         height: 8px !important;
     }
 
@@ -1174,23 +1209,32 @@ img{
     }
 
     .analisysOverlay{
-        bottom: 220px;
-        left: 69%;
+        bottom: 3.5%;
+        left: 67.7%;
+    }
+
+    .subir{
+        bottom: 2.5%;
     }
 
     #analisysOverlay-inflow{
-        top: 48%;
-        left: 40.5%;
+        width: 85%;
         
         border-radius: 16px;
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
-        padding: 16px 18px;
+        padding: 14px 16px;
     }
 
     #inflow { 
-        font-size: 1rem !important;
-        margin-left: 20px !important;
-        margin-right: 30px !important;
+        margin-left: clamp(5px, 0.5vw, 20px) !important;
+        margin-right: clamp(10px, 1vw, 30px) !important;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1063px){
+
+    #analisysOverlay-inflow{
+        padding: 10px 12px;
     }
 }
