@@ -163,6 +163,7 @@ img{
     margin-top: 2.5rem;
     margin-bottom: 3.2325rem;
     max-width: 1020px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
 }
 
 .highlightedText{
@@ -203,6 +204,7 @@ img{
     display: flex;
     justify-content: space-between;
     margin-top: 3.5rem;
+    margin-right: 1.5rem;
 }
 
 #poStats-div{
@@ -374,8 +376,11 @@ img{
 
 #analisysOverlay-inflow img{
     width: clamp(17px, 4vw, 42px) !important;
-    min-width: 17px;
     margin: 0;
+}
+
+#analisysOverlayImg{
+    min-width: 17px;
 }
 
 #analisysOverlay-inflow p{
@@ -514,9 +519,8 @@ img{
     display: flex;
 }
 
-.percent img{
-    width: 6px !important;
-    height: 6px !important;
+#percentImg{
+    max-width: clamp(10px, 1.5vw, 15px);
     margin-right: 3px;
 }
 
@@ -789,6 +793,10 @@ img{
 
     #logosSection{
         grid-template-columns: 1fr 1fr 1fr;
+        max-width: 1200px;
+        margin: 0 auto;
+        margin-top: 3.5rem;
+        margin-bottom: 8.375rem;
     }
 
     #reviewsHeader{
