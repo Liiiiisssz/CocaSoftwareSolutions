@@ -51,6 +51,8 @@ COCASOFTWARESOLUTIONS
 
 ## 🚀 Como Executar Localmente
 
+### Opcão 1: Clonando o repositório
+
 1. Clone o repositório:
 ```
    git clone https://github.com/Liiiiisssz/CocaSoftwareSolutions.git
@@ -63,6 +65,25 @@ COCASOFTWARESOLUTIONS
    - Duplo clique, ou
    - Via extensão Live Server no VS Code.
 
+##
+
+### Opção 2: Baixando o arquivo .zip
+
+1. Baixe o arquivo `.zip` do repositório:
+   - Acesse [https://github.com/Liiiiisssz/CocaSoftwareSolutions](https://github.com/Liiiiisssz/CocaSoftwareSolutions)
+   - Clique no botão **Code** e depois em **Download ZIP**.
+
+2. Extraia o conteúdo do arquivo `.zip` em uma pasta de sua preferência.
+
+3. Entre na pasta extraída:
+```
+  cd caminho-da-pasta-extraída
+```
+
+4. Abra o arquivo `index.html` no navegador:
+   - Dê um duplo clique no arquivo, ou
+   - Utilize a extensão **Live Server** no VS Code.
+     
 ---
 
 ## 👩‍💻 Autora
